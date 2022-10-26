@@ -8,9 +8,9 @@ Steps to use this project.
 1. Clone this project
 2. Run migration command
 3. Add env variables: 
-   1. GOOGLE_CALENDAR_AUTH_PROFILE=oauth
-   2. GOOGLE_CLIENT_ID=
-   3. GOOGLE_CLIENT_SECRET=
+   1. `GOOGLE_CALENDAR_AUTH_PROFILE=oauth`
+   2. `GOOGLE_CLIENT_ID=`
+   3. `GOOGLE_CLIENT_SECRET=`
 4. Add google end variables in services.php
    ```
    'google' => [
