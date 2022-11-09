@@ -30,7 +30,7 @@ Route::get('/contacts', function () {
 });
 
 Route::get('/contacts/create', function () {
-    return \SwapnealDev\GoogleContact\Contacts::create([
+    return (array) \SwapnealDev\GoogleContact\Contacts::create([
         'first_name' => 'Raju',
         'last_name' => 'Rastogi',
         'mobile' => '9876543210',
@@ -39,7 +39,8 @@ Route::get('/contacts/create', function () {
 });
 
 //$peopleId is as resourceName like 'people/{string}'
-Route::get('/contacts/update', function () {
+$peopleId = 'people/c5686566365393583123';
+Route::get('/contacts/update', function () use ($peopleId) {
     return (array) \SwapnealDev\GoogleContact\Contacts::update($peopleId, [
         'first_name' => 'Raju Bhai',
         'last_name' => 'Rastogi',
@@ -47,8 +48,8 @@ Route::get('/contacts/update', function () {
     ]);
 });
 
-Route::get('/contacts/delete', function () {
-    return \SwapnealDev\GoogleContact\Contacts::delete($peopleId);
+Route::get('/contacts/delete', function () use ($peopleId) {
+    return (array) \SwapnealDev\GoogleContact\Contacts::delete($peopleId);
 });
 
 Route::get('/google-connect', function () {
