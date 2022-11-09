@@ -3564,12 +3564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swapneal-dev/laravel-google-contacts.git",
-                "reference": "4d5efc6c124e862fad99a9e9b81daabc12fabd53"
+                "reference": "38990a03ffde271e652622fad7a8414dccb48c49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swapneal-dev/laravel-google-contacts/zipball/4d5efc6c124e862fad99a9e9b81daabc12fabd53",
-                "reference": "4d5efc6c124e862fad99a9e9b81daabc12fabd53",
+                "url": "https://api.github.com/repos/swapneal-dev/laravel-google-contacts/zipball/38990a03ffde271e652622fad7a8414dccb48c49",
+                "reference": "38990a03ffde271e652622fad7a8414dccb48c49",
                 "shasum": ""
             },
             "require": {
@@ -3603,7 +3603,7 @@
                 "issues": "https://github.com/swapneal-dev/laravel-google-contacts/issues",
                 "source": "https://github.com/swapneal-dev/laravel-google-contacts/tree/main"
             },
-            "time": "2022-10-26T06:03:34+00:00"
+            "time": "2022-11-09T03:22:28+00:00"
         },
         {
             "name": "symfony/console",

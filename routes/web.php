@@ -29,6 +29,28 @@ Route::get('/contacts', function () {
     return \SwapnealDev\GoogleContact\Contacts::get();
 });
 
+Route::get('/contacts/create', function () {
+    return \SwapnealDev\GoogleContact\Contacts::create([
+        'first_name' => 'Raju',
+        'last_name' => 'Rastogi',
+        'mobile' => '9876543210',
+        'alternate_mobile' => '9898989898' //this is optional parameter
+    ]);
+});
+
+//$peopleId is as resourceName like 'people/{string}'
+Route::get('/contacts/update', function () {
+    return (array) \SwapnealDev\GoogleContact\Contacts::update($peopleId, [
+        'first_name' => 'Raju Bhai',
+        'last_name' => 'Rastogi',
+        'mobile' => '9876543210',
+    ]);
+});
+
+Route::get('/contacts/delete', function () {
+    return \SwapnealDev\GoogleContact\Contacts::delete($peopleId);
+});
+
 Route::get('/google-connect', function () {
     return Socialite::driver('google')
         ->scopes([
