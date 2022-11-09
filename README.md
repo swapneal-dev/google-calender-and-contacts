@@ -2,7 +2,7 @@
 
 I have used a laravel socialite package for sign in using google.
 
-`Most of the important things you will find in web.php`
+`All the implementation I have done in web.php file`
 
 Steps to use this project.
 1. Clone this project
